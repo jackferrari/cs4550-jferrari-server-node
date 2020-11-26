@@ -1,0 +1,14 @@
+{
+  "name": "cs4550-jferrari-server-node",
+  "version": "1.0.0",
+  "description": "Node js middle tier for cs4550 homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jack Ferrari",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
