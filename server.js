@@ -1,3 +1,4 @@
+var mongoose = require('mongoose')
 var express = require('express')
 var app = express()
 
@@ -10,6 +11,8 @@ app.use(function (req, res, next) {
     next();
 });
 
+mongoose.connect('mongodb://localhost:27017/quiz', {useNewUrlParser: true});
+
 var bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
@@ -17,4 +20,4 @@ require('./controllers/quizzes.controller.server')(app)
 require('./controllers/questions.controller.server')(app)
 require('./controllers/quiz-attempts.controller.server')(app)
 
-app.listen(3000)
+app.listen(3010)
