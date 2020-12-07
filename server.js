@@ -11,7 +11,7 @@ app.use(function (req, res, next) {
     next();
 });
 
-mongoose.connect('mongodb://localhost:27017/quiz', {useNewUrlParser: true});
+mongoose.connect('mongodb://localhost:27017/cs4550', {useNewUrlParser: true});
 
 var bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }))
